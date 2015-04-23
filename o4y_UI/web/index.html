@@ -74,10 +74,28 @@ and open the template in the editor
             </div>
            <button type="submit" class="btn btn-success">Vai</button>
         </form>
-        <form class="navbar-form navbar-right">
-            <button type="submit" class="btn btn-success">Sign in</button>
+        <div class="navbar-form navbar-right">
+            <div class="btn-group">   
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Sign in<span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <label>Username</label>
+                        <input type="text" class="form-control">
+                    </li>
+                    <li>
+                        <label>Password</label>
+                        <input type="password" class="form-control">
+                    </li>
+                    <li>
+          
+                        <button style="margin-left: 30px" type="submit" class="btn btn-success">ok</button>
+                    </li>                            
+                    
+
+                </ul>
+            </div>
             <button type="submit" class="btn btn-success">Sign up</button>
-        </form>
+        </div>
                
     
 </div>
