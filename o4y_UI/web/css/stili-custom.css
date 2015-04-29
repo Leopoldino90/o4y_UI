@@ -2,6 +2,9 @@
 .adapted-container { 
     min-width: 1250px!important;
 }
+.banner{
+    background-color: #CDF5C6;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
