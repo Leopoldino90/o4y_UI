@@ -13,17 +13,18 @@ and open the template in the editor
 
     <title>Jumbotron Template for Bootstrap</title>
 
-   <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen"
-     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/jquery.datepicker.css">
     <link href="css/stili-custom.css" rel="stylesheet"/>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -44,7 +45,7 @@ and open the template in the editor
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="banner">
       <div class="container">
-          <p align="center"><img src="img/logo.png"></p>
+         <p align="center"><img src="img/logo.png" name="logo"></p>
       </div>
     </div>
     
@@ -106,67 +107,79 @@ and open the template in the editor
 </div>
      
     </nav>
+
     
-    
-<div class="container">
+<div class="panel panel-default2">
   <h2>Inserimento offerta</h2>
- <div class="row">
+  <div class="row">
         <form role="form">
             <div class="col-md-4">
-                    <div class="form-group">
+                    <div class="form-group-with-margin">
                       <label for="usr">Nome:</label>
                       <input type="text" class="form-control" >
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group-with-margin">
                       <label for="usr">Marca:</label>
                       <input type="text" class="form-control" >
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group-with-margin">
                       <label for="usr">Prodotto:</label>
                       <input type="text" class="form-control">
                     </div>
                 
-                    <label >Tipo offerta</label>
-                    <select class="form-control">
-                      <option>1 + 1</option>
-                      <option>3 x 2</option>
-                      <option>Custom</option>
-                    </select>
-                    
-                    <label >Data inizio</label>
-     <div id="datetimepicker" class="input-append date">
-      <input type="text">
-      <span class="add-on">
-        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-      </span>
-    </div>
-    <script type="text/javascript"
-     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
-    </script> 
-    <script type="text/javascript"
-     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
-    </script>
-    <script type="text/javascript">
-      $('#datetimepicker').datetimepicker({
-        format: 'dd/MM/yyyy hh:mm:ss',
-        language: 'pt-BR'
-      });
-    </script>
+                    <div class="form-group-with-margin">
+                        <label >Tipo offerta</label>
+                        <select class="form-control">
+                          <option>1 + 1</option>
+                          <option>3 x 2</option>
+                          <option>Custom</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group-with-margin">
+                        <label >Data inizio</label>
+                        <div class='input-group date'>
+                        <input type="text" class="form-control" name="date" id="date" data-select="datepicker" placeholder="Es: 13/10/1987">
+                        <span class="input-group-addon">
+                            <button type="button" class="glyphicon glyphicon-calendar" data-toggle="datepicker"><i class="fa fa-calendar"></i></button>
+                        </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group-with-margin">
+                        <label >Data fine</label>
+                        <div class='input-group date'>
+                            <input type="text" class="form-control" name="date" id="date" data-select="datepicker" placeholder="Es: 13/10/1987">
+                        <span class="input-group-addon">
+                            <button type="button" class="glyphicon glyphicon-calendar" data-toggle="datepicker"><i class="fa fa-calendar"></i></button>
+                        </span>
+                        </div>
+                    </div>
 
                                     
 
             </div>
 
               <div class="col-md-4">
-                  continua...
+                <div class="form-group-with-margin">  
+                    <label for="usr">Immagine da url:</label>
+                    <div class='input-group btn-toolbar-extended'>
+                        <input type="text" class="form-control"  id="url" placeholder="https://...">
+                        <span class="input-group-addon">
+                                <button type="button" class="glyphicon glyphicon-upload"></button>
+                        </span>
+                    </div>
+                    <label for="usr">Immagine da pc:</label>
+                    <br><img src="" name="prev" height="200" alt="Image preview...">
+                    <div class="input-group btn-toolbar-extended">        
+                        <input type="file" class="form-control" id="multi_file_upload" onchange="previewFile()">
+                        <span class="input-group-addon">
+                                <button type="button" class="glyphicon glyphicon-upload"></button>
+                        </span>
+                    </div>
+                </div>
               </div>
         </form>
  </div>
@@ -184,6 +197,8 @@ and open the template in the editor
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.datepicker.js"></script>
+    <script type="text/javascript" src="js/uploadImage.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <!--
