@@ -17,13 +17,11 @@ and open the template in the editor
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/jquery.datepicker.css">
     <link href="css/stili-custom.css" rel="stylesheet"/>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
-
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -107,7 +105,7 @@ and open the template in the editor
 </div>
      
     </nav>
-
+    
     
 <div class="container">
   <h2>Inserimento offerta</h2>
@@ -137,25 +135,29 @@ and open the template in the editor
                     </select>
                     
                     <label >Data inizio</label>
-                    <div class='input-group date'>
-                    <input type="text" class="form-control" name="date" id="date" data-select="datepicker">
+                    <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
                     <span class="input-group-addon">
-                        <button type="button" class="glyphicon glyphicon-calendar" data-toggle="datepicker"><i class="fa fa-calendar"></i></button>
+                        <span class="glyphicon glyphicon-calendar"></span>
                     </span>
                     </div>
 
                      <label >Data fine</label>
-                    <div class='input-group date'>
-                    <input type="text" class="form-control" name="date" id="date" data-select="datepicker">
+                    <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
                     <span class="input-group-addon">
-                        <button type="button" class="glyphicon glyphicon-calendar" data-toggle="datepicker"><i class="fa fa-calendar"></i></button>
+                        <span class="glyphicon glyphicon-calendar"></span>
                     </span>
                     </div>
 
                                     
 
             </div>
-
+             <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker1').datetimepicker();
+                        });
+              </script>
               <div class="col-md-4">
                   continua...
               </div>
@@ -175,7 +177,6 @@ and open the template in the editor
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.datepicker.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <!--
