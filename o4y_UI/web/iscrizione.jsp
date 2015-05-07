@@ -57,7 +57,7 @@
          
         <form class="navbar-form navbar-left">
             <div class="btn-group">   
-                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Scegli per categoria<span class="caret"></span></button>
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Scegli per categoria <span class="caret"></span></button>
                 <ul class="dropdown-menu" role="menu">
                     <li>Libri</li>
                     <li>Giochi</li>
