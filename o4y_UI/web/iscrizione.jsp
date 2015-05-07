@@ -111,7 +111,7 @@
 
     
 <div class="panel panel-default2">
-  <h2>Inserimento offerta</h2>
+  <h2>Iscrizione</h2>
   <div class="row">
         <form role="form">
             <div class="col-md-4">
@@ -150,13 +150,36 @@
                 
             </div>
             <div class="col-md-4">
-                <div class="form-group-with-margin" style="display:none" id="p_iva">
-                        <label >Partita IVA:</label>
-                        <input type="text" class="form-control">
+                <div class="form-group-with-margin" style="display:none" id="block_commerciante">
+                        <div class="form-group-with-margin">
+                            <label >Nome Azienda:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group-with-margin">
+                            <label >Partita IVA:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    
+                        <div class="form-group-with-margin">
+                            <label >Sede Legale:</label>
+                            <input type="text" class="form-control">
+                        </div>
                 </div>
             </div>
         </form>
  </div>
+  
+ <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        
+            <button type="submit" class="btn btn-success">Conferma <span class="glyphicon glyphicon-ok-circle"></span></button>
+            <button type="submit" class="btn btn-danger">Annulla <span class="glyphicon glyphicon-remove-circle"></span></button>
+            <p></p>
+       
+    </div>
+</div> 
 </div>
     
 
@@ -185,7 +208,7 @@
         function changeForm() {
             var form = document.getElementById('form_iscrizione');
 
-                var modify = document.getElementById('p_iva');
+                var modify = document.getElementById('block_commerciante');
                 if (form.value == 'Commerciante') {             
                   modify = modify.setAttribute("style","display:block");
                 }
