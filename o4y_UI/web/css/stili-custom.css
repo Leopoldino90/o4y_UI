@@ -306,4 +306,10 @@
 	margin-bottom: 13px;
 }
 
+.form-group-with-margin textArea{
+   
+    resize: none;
+
+}
+
 
