@@ -48,7 +48,7 @@ function check_multifile_logo(file) {
 }
 
 function previewFile(){
-       var preview = document.getElementsByName('prev'); //selects the query named img
+       var preview = document.getElementById('prev_img') //selects the query named img
        var file    = document.querySelector('input[type=file]').files[0]; //sames as here
        var reader  = new FileReader();
        reader.onloadend = function () {
@@ -62,4 +62,3 @@ function previewFile(){
        }
   }
 previewFile();
-
