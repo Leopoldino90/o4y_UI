@@ -16,6 +16,7 @@
     margin-left: 15%;
     margin-right: 15%;
     border-color: #000;
+    min-width: 1250px;
 }
 
 .form-group-with-margin{
