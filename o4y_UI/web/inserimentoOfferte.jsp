@@ -100,7 +100,9 @@ and open the template in the editor
 
                 </ul>
             </div>
-            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span> Sign up</button>
+            <a href="iscrizione.jsp">
+                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>Sign up</button>
+            </a>
         </div>
                
     

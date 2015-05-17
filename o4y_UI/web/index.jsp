@@ -1,3 +1,9 @@
+<%-- 
+    Document   : index
+    Created on : 17-mag-2015, 16.59.19
+    Author     : Dave
+--%>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -102,9 +108,9 @@ and open the template in the editor
 
                 </ul>
             </div>
-            <form action="offerte.html" method="post">
+            <a href="iscrizione.jsp">
                 <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>Sign up</button>
-            </form>
+            </a>
         </div>
                
     

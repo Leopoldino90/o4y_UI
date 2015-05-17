@@ -50,10 +50,10 @@
       </div>
     </div>
     
-<nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse">
      
        
-<div class="adapted-container"> 
+    <div class="adapted-container"> 
          
         <form class="navbar-form navbar-left">
             <div class="btn-group">   
@@ -107,89 +107,33 @@
         </div>
                
     
-</div>
+    </div>
      
     </nav>
 
     
-<div class="panel panel-default2">
-  <h2>Iscrizione</h2>
-  <div class="row">
-        <form role="form">
-            <div class="col-md-4">
+    <div class="panel panel-default2">
+        <div class="row">
+            <form role="form">
+                <div class="col-md-4">
                     <div class="form-group-with-margin">
-                      <label for="usr">Nome:</label>
-                      <input type="text" class="form-control" >
+                        <label for="usr">Offerte Recenti</label>
                     </div>
-
-                    <div class="form-group-with-margin">
-                      <label for="usr">Cognome:</label>
-                      <input type="text" class="form-control" >
-                    </div>
-                    
-                    <div class="form-group-with-margin">
-                        <label >Data di Nascita:</label>
-                        <input type="text" class="form-control" name="date" placeholder="Es: 13/10/1987">
-                    </div>
-                    
-                    <div class="form-group-with-margin">
-                        <label >Luogo di Nascita:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                
-                    <div class="form-group-with-margin">
-                        <label >Indirizzo E-Mail:</label>
-                        <input type="text" class="form-control">
-                    </div> 
-                
-                    <div class="form-group-with-margin">
-                        <label >Tipo di Utente</label>
-                        <select class="form-control" id="form_iscrizione" onchange=changeForm()>
-                          <option>Privato</option>
-                          <option>Commerciante</option>
-                        </select>
-                    </div>
-                
-            </div>
-            <div class="col-md-4">
-                <div class="form-group-with-margin" style="display:none" id="block_commerciante">
-                        <div class="form-group-with-margin">
-                            <label >Nome Azienda:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group-with-margin">
-                            <label >Partita IVA:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    
-                        <div class="form-group-with-margin">
-                            <label >Sede Legale:</label>
-                            <input type="text" class="form-control">
-                        </div>
                 </div>
-            </div>
-        </form>
- </div>
-  
- <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        
-            <button type="submit" class="btn btn-success">Conferma <span class="glyphicon glyphicon-ok-circle"></span></button>
-            <button type="submit" class="btn btn-danger">Annulla <span class="glyphicon glyphicon-remove-circle"></span></button>
-            <p></p>
-       
+                <div class="col-md-4">
+                    <div class="form-group-with-margin">
+                        <label for="usr">Cronologia Offerte</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group-with-margin">
+                        <label for="usr">Ulteriori Opzioni</label>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-</div> 
-</div>
     
-
-
-
-   
-            
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -206,18 +150,5 @@
                        alert("ciao");
                 });</script>
     -->
-    <script type="text/javascript">
-        function changeForm() {
-            var form = document.getElementById('form_iscrizione');
-
-                var modify = document.getElementById('block_commerciante');
-                if (form.value == 'Commerciante') {             
-                  modify = modify.setAttribute("style","display:block");
-                }
-                else {
-                  modify = modify.setAttribute("style","display:none");
-                }
-        }
-    </script>
   </body>
 </html>
