@@ -83,22 +83,13 @@
         </form>
         <div class="navbar-form navbar-right">
             <div class="btn-group">   
-                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign in</button>
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Ciao, Germano <span class="caret"></span></button>
                 <ul class="dropdown-menu" role="menu">
-                    <li>
-                        <label style="margin-left: 12px;margin-top: 10px">Username</label>
-                        <input style="margin-left: 12px;margin-right: 12px" type="text" class="form-control">
-                    </li>
-                    <li>
-                        <label style="margin-left: 12px;margin-top: 10px">Password</label>
-                        <input style="margin-left: 12px;margin-right: 12px" type="password" class="form-control">
-                    </li>
-                    <li>
-          
-                        <button style="margin-left: 75%;margin-top: 10px" type="submit" class="btn btn-success">ok</button>
-                    </li>                            
-                    
-
+                    <a href=""><li class="li-custom">Il Mio Account<li></a>
+                    <a href=""><li class="li-custom">Ultime Offerte Viste<li></a>
+                    <a href=""><li class="li-custom">Consigliati per te<li></a>
+                    <li class="divider"></li>
+                    <a href=""><li class="li-custom">Non sei Germano? Esci</li></a>
                 </ul>
             </div>
             <a href="iscrizione.jsp">
@@ -112,26 +103,102 @@
     </nav>
 
     
-    <div class="panel panel-default2">
+    <div class="panel-default-invisible">
         <div class="row">
             <form role="form">
                 <div class="col-md-4">
+                    <div class="panel panel-default-center">
                     <div class="form-group-with-margin">
                         <label for="usr">Offerte Recenti</label>
+                        <h3 class="h3-custom">Gestisci le offerte che ti interessano</h3>
                     </div>
+                    </div>    
                 </div>
                 <div class="col-md-4">
+                    <div class="panel panel-default-center">
                     <div class="form-group-with-margin">
                         <label for="usr">Cronologia Offerte</label>
+                        <a href=""><h3 class="h3-custom">Visualizza le offerte che hai visto recentemente</h3></a>
+                        <a href=""><h3 class="h3-custom">Visualizza le offerte che sono ancora attive</h3></a>                     
                     </div>
+                    </div>    
                 </div>
                 <div class="col-md-4">
+                    <div class="panel panel-default-center">
+                    <div class="form-group-with-margin">
+                        <label for="usr">Ulteriori Opzioni</label>
+                        <a href=""><h3 class="h3-custom">Lascia un Feedback su un prodotto offerto</h3></a>
+                        <a href=""><h3 class="h3-custom">Lascia un Feedback su un venditore</h3></a>
+                    </div>
+                    </div>    
+                </div>
+            </form>
+        </div> <!-- end row1 -->
+    </div>
+    
+    <div class="panel-default-invisible">
+        <div class="row">
+            <form role="form">
+                <div class="col-md-4">
+                    <div class="panel panel-default-center">
+                    <div class="form-group-with-margin">
+                        <label for="usr">Area Personale</label>
+                        <h3 class="h3-custom">Gestisci i tuoi dati</h3>
+                    </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default-center">
+                    <div class="form-group-with-margin">
+                        <label for="usr">Impostazioni Account</label>
+                        <a href=""><h3 class="h3-custom">Modifica nome, e-mail, indirizzo e password</h3></a>
+                        <a href=""><h3 class="h3-custom">Hai dimenticato la password?</h3></a>
+                        <a href=""><h3 class="h3-custom">Gestione notifiche via app</h3></a>
+                    </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default-center">
+                    <div class="form-group-with-margin">
+                        <label for="usr">Comunicazioni da Offer4You</label>
+                        <a href=""><h3 class="h3-custom">Preferenze di comunicazione</h3></a>
+                        <a href=""><h3 class="h3-custom">Notifica scadenza offerte</h3></a>
+                    </div>
+                    </div>    
+                </div>
+            </form>
+        </div> <!-- end row2 -->
+    </div>
+    
+    <div class="panel-default-invisible">
+        <div class="row">
+            <form role="form">
+                <div class="col-md-4">
+                    <div class="panel panel-default-center">
+                    <div class="form-group-with-margin">
+                        <label for="usr">Offerte Personali</label>
+                        <h3 class="h3-custom">Gestisci le offerte che hai creato</h3>
+                    </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default-center">
+                    <div class="form-group-with-margin">
+                        <label for="usr">Cronologia Offerte Personali</label>
+                        <a href=""><h3 class="h3-custom">Visualizza tutte le offerte che hai creato</h3></a>
+                        <a href=""><h3 class="h3-custom">Gestisci le offerte che sono ancora attive</h3></a> 
+                    </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default-center">
                     <div class="form-group-with-margin">
                         <label for="usr">Ulteriori Opzioni</label>
                     </div>
+                    </div>    
                 </div>
             </form>
-        </div>
+        </div> <!-- end row2 -->
     </div>
     
 

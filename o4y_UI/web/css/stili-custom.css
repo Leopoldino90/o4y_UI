@@ -13,10 +13,22 @@
 }
 
 .panel-default2{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     border-color: #000;
-    min-width: 1250px;
+    min-width: 1150px!important;
+}
+
+.panel-default-invisible{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color:#FFF;
+    min-width: 1150px!important;
+}
+
+.panel-default-center{
+    border-color: #000;
+    min-width: 100px!important;
 }
 
 .form-group-with-margin{
@@ -24,8 +36,17 @@
     margin-bottom: 8%;
 }
 .btn-toolbar-extended{
-    width: 400px;
-    
+    width: 400px;    
+}
+
+.h3-custom{
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.li-custom{
+    margin-left: 3%;
+    margin-right: 3%;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
