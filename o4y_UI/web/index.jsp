@@ -17,7 +17,7 @@ and open the template in the editor
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Welcome to Offer4You</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -92,21 +92,18 @@ and open the template in the editor
             <div class="btn-group">   
                 <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign in</button>
                 <ul class="dropdown-menu" role="menu">
-                    <li>
+                <form action="/sessions" method="post">
+                    <fieldset class="text-primary">                        
                         <label style="margin-left: 12px;margin-top: 10px">Username</label>
                         <input style="margin-left: 12px;margin-right: 12px" type="text" class="form-control">
-                    </li>
-                    <li>
                         <label style="margin-left: 12px;margin-top: 10px">Password</label>
                         <input style="margin-left: 12px;margin-right: 12px" type="password" class="form-control">
-                    </li>
-                    <li>
-          
-                        <button style="margin-left: 75%;margin-top: 10px" type="submit" class="btn btn-success">ok</button>
-                    </li>                            
-                    
-
-                </ul>
+                    </fieldset>
+                    <fieldset class="success">
+                        <button style="margin-left: 75%;margin-top: 10px" type="submit" class="btn btn-success">Ok</button>
+                    </fieldset>
+                </form>
+                </ul>    
             </div>
             <a href="iscrizione.jsp">
                 <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>Sign up</button>
@@ -233,5 +230,11 @@ and open the template in the editor
                        alert("ciao");
                 });</script>
     -->
+    <script type="text/javascript">
+        $('.dropdown-menu').click(function(e) {
+                e.stopPropagation();
+            });
+        $('.selectpicker').selectpicker({container: 'body'});
+    </script>
   </body>
 </html>

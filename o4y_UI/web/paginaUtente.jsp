@@ -89,7 +89,7 @@
                     <a href=""><li class="li-custom">Ultime Offerte Viste<li></a>
                     <a href=""><li class="li-custom">Consigliati per te<li></a>
                     <li class="divider"></li>
-                    <a href=""><li class="li-custom">Non sei Germano? Esci</li></a>
+                    <a href="index.jsp"><li class="li-custom">Non sei Germano? Esci</li></a>
                 </ul>
             </div>
             <a href="iscrizione.jsp">
